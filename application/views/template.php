@@ -64,6 +64,7 @@
             <li class="<?php echo active_menu('master','user_level')?>"><?php echo anchor('master/user_level','<i class="fa fa-circle-o"></i> User Level')?></li>
             <li class="<?php echo active_menu('master','user_status')?>"><?php echo anchor('master/user_status','<i class="fa fa-circle-o"></i> User Status')?></li>
             <li class="<?php echo active_menu('city')?>"><?php echo anchor('city','<i class="fa fa-circle-o"></i> City')?></li>
+            <li class="<?php echo active_menu('ref')?>"><?php echo anchor('ref','<i class="fa fa-circle-o"></i> Reference')?></li>
           </ul>
         </li> 
         <li class="treeview">

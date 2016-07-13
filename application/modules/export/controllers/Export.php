@@ -49,60 +49,39 @@ class Export extends MY_Controller {
 			$active_sheet->setCellValue('H1', 'Phonoe/HP');
 			$active_sheet->setCellValue('I1', 'Email');
 			$active_sheet->setCellValue('J1', 'Twitter');
-			$active_sheet->setCellValue('K1', 'Judul Karya');
-			$active_sheet->setCellValue('L1', 'Jenis Karya');
-			// $active_sheet->setCellValue('M1', 'Pekerjaan');
-			// $active_sheet->setCellValue('M1', 'Pekerjaan');
-			// $active_sheet->setCellValue('N1', 'Bidang Pekerjaan');
-			// $active_sheet->setCellValue('O1', 'Brand Rokok');
-			// $active_sheet->setCellValue('P1', 'SIM C (Y/T)');
-			// $active_sheet->setCellValue('Q1', 'Nomor SIM');
-			// $active_sheet->setCellValue('R1', 'Masa Berlaku');
-			// $active_sheet->setCellValue('S1', 'Motor Besar (Y/T)');
-			// $active_sheet->setCellValue('T1', 'Merk Motor Besar');
-			// $active_sheet->setCellValue('U1', 'Masuk Rumah Sakit (Y/T)');
-			// $active_sheet->setCellValue('V1', 'Penyebab Sakit');
-			// $active_sheet->setCellValue('W1', 'Passport (Y/T)');
-			// $active_sheet->setCellValue('X1', 'Nama Passport');
-			// $active_sheet->setCellValue('Y1', 'Nomor Passport');
-			// $active_sheet->setCellValue('Z1', 'Masa Berlaku');
-			// $active_sheet->setCellValue('AA1', 'Ke Barcelona (Y/T)');
-			// $active_sheet->setCellValue('AB1', 'Pernah Kemana Saja');
-			// $active_sheet->setCellValue('AC1', 'Campaign MLB (Y/T)');
-			// $active_sheet->setCellValue('AD1', 'Nama Campaign');
-			// $active_sheet->setCellValue('AE1', 'Campaign Lain (Y/T)');
-			// $active_sheet->setCellValue('AF1', 'Mendapatkan Hadia (Y/T)');
-			// $active_sheet->setCellValue('AG1', 'Nama Campaign');
-			// $active_sheet->setCellValue('AH1', 'Hamil');
-			// $active_sheet->setCellValue('AI1', 'INT_Q1 (MOT)');
-			// $active_sheet->setCellValue('AJ1', 'INT_Q1 (NIG)');
-			// $active_sheet->setCellValue('AK1', 'INT_Q1 (TRA)');
-			// $active_sheet->setCellValue('AL1', 'INT_Q2 (MOT)');
-			// $active_sheet->setCellValue('AM1', 'INT_Q2 (NIG)');
-			// $active_sheet->setCellValue('AN1', 'INT_Q2 (TRA)');
-			// $active_sheet->setCellValue('AO1', 'MOT_Q1');
-			// $active_sheet->setCellValue('AP1', 'MOT_Q2');
-			// $active_sheet->setCellValue('AQ1', 'MOT_Q3');
-			// $active_sheet->setCellValue('AR1', 'MOT_Q4');
-			// $active_sheet->setCellValue('AS1', 'MOT_Q5');
-			// $active_sheet->setCellValue('AT1', 'NIG_Q1');
-			// $active_sheet->setCellValue('AU1', 'NIG_Q2');
-			// $active_sheet->setCellValue('AV1', 'NIG_Q3');
-			// $active_sheet->setCellValue('AW1', 'NIG_Q4');
-			// $active_sheet->setCellValue('AX1', 'NIG_Q5');
-			// $active_sheet->setCellValue('AY1', 'TRA_Q1');
-			// $active_sheet->setCellValue('AZ1', 'TRA_Q2');
-			// $active_sheet->setCellValue('BA1', 'TRA_Q3');
-			// $active_sheet->setCellValue('BB1', 'TRA_Q4');
-			// $active_sheet->setCellValue('BC1', 'TRA_Q5');
-			// $active_sheet->setCellValue('BD1', 'TOTAL MOT');
-			// $active_sheet->setCellValue('BE1', 'TOTAL NIG');
-			// $active_sheet->setCellValue('BF1', 'TOTAL TRA');
-			// $active_sheet->setCellValue('BG1', 'Remark');
-			// $active_sheet->setCellValue('BH1', 'Insight');
-			// $active_sheet->setCellValue('BI1', 'Distribution Date');
-			// $active_sheet->setCellValue('BJ1', 'Status');
-			// $active_sheet->setCellValue('BK1', 'Call History');
+			$active_sheet->setCellValue('K1', 'Brand Rokok');
+			$active_sheet->setCellValue('L1', 'Judul Karya');
+			$active_sheet->setCellValue('M1', 'Jenis Karya');
+			$active_sheet->setCellValue('N1', 'Berhasil Dihubungi');
+			$active_sheet->setCellValue('O1', 'Minta Waktu 15 Menit');
+			$active_sheet->setCellValue('P1', 'Perokok Dewasa Berusia Min 18 Tahun');
+			$active_sheet->setCellValue('Q1', 'Dihubungi Kembali');
+			$active_sheet->setCellValue('R1', 'A-1 (Plagiat)');
+			$active_sheet->setCellValue('S1', 'A-1 (Tahu Program Ini Dari Mana)');
+			$active_sheet->setCellValue('T1', 'A-2 (Penjelasan Karya)');
+			$active_sheet->setCellValue('U1', 'A-3 (Pernyataan Tertulis Materai)');
+			$active_sheet->setCellValue('V1', 'B-1 (Kota F2F)');
+			$active_sheet->setCellValue('W1', 'B-1 (Bersedia Hadir F2f)');
+			$active_sheet->setCellValue('X1', 'B-2 (Terakhir Keluar Negeri)');
+			$active_sheet->setCellValue('Y1', 'B-2 (Tujuan)');
+			$active_sheet->setCellValue('Z1', 'B-3 (Traveling Ke Negara Visa)');
+			$active_sheet->setCellValue('AA1', 'B-3 (Negara, Tahun, Jenis Visa)');
+			$active_sheet->setCellValue('AB1', 'B-4 (Bersedia Memenangkan Grandprize)');
+			$active_sheet->setCellValue('AC1', 'C-1 (Yang Akan Dilakukan Bila Menang Grandprize)');
+			$active_sheet->setCellValue('AD1', 'D-1 (What do you know about Sampoerna A Mild Brand)');
+			$active_sheet->setCellValue('AE1', 'D-2 (What was the most memorable Sampoerna A Mild program that you know)');
+			$active_sheet->setCellValue('AF1', 'D-3 (Where do you usually see the Sampoerna A Mild campaign advertisement)');
+			$active_sheet->setCellValue('AG1', 'D-3 (Nama Billboard, Magazine, Newspaper, Cinema Ad atau yang lainnya)');
+			$active_sheet->setCellValue('AH1', 'D-4 (Have you ever been to Sampoerna A Mild events? If yes what was it and why did you go there)');
+			$active_sheet->setCellValue('AI1', 'A (Memiliki Passport)');
+			$active_sheet->setCellValue('AJ1', 'A (Nama Passport)');
+			$active_sheet->setCellValue('AK1', 'A (Masa Berlaku Passport)');
+			$active_sheet->setCellValue('AL1', 'B (Apakah Anda pernah mengunjungi negara-negara berikut Australia,Uni Eropa (Perancis, Italia, Inggris, Jerman, Belanda, etc))');
+			$active_sheet->setCellValue('AM1', 'C (Pernah Mengikuti Campaign Amild/Sejenis)');
+			$active_sheet->setCellValue('AN1', 'C (Sebutkan)');
+			$active_sheet->setCellValue('AO1', 'Distribution Date');
+			$active_sheet->setCellValue('AP1', 'Status');
+			$active_sheet->setCellValue('AQ1', 'Call History');
 			
 			$date_from 	= format_ymd($this->input->post('date_from'));
 			$date_to 	= format_ymd($this->input->post('date_to'));
@@ -122,77 +101,41 @@ class Export extends MY_Controller {
 				$active_sheet->setCellValueExplicit('H'.$i, $r->tlp);
 				$active_sheet->setCellValue('I'.$i, $r->email);
 				$active_sheet->setCellValue('J'.$i, $r->tw);
-				$active_sheet->setCellValue('K'.$i, $r->art_title);
-				$active_sheet->setCellValue('L'.$i, $r->art_type);
-				// $active_sheet->setCellValue('M'.$i, $r->job);
-				// $active_sheet->setCellValue('N'.$i, $r->job_type);
-				// $active_sheet->setCellValue('O'.$i, $r->brand);
-				// $active_sheet->setCellValue('P'.$i, ($r->sim==1?'Ya':($r->sim==2?'Tidak':'')));
-				// $active_sheet->setCellValueExplicit('Q'.$i, $r->sim_no);
-				// $active_sheet->setCellValue('R'.$i, PHPExcel_Shared_Date::PHPToExcel(date_to_excel($r->sim_exp)));
-				// $active_sheet->getStyle('R'.$i)->getNumberFormat()->setFormatCode('dd/mm/yyyy');		   
-				// $active_sheet->setCellValue('S'.$i, ($r->motor==1?'Ya':($r->motor==2?'Tidak':'')));
-				// $active_sheet->setCellValue('T'.$i, $r->motor_desc);
-				// $active_sheet->setCellValue('U'.$i, ($r->sick==1?'Ya':($r->sick==2?'Tidak':'')));
-				// $active_sheet->setCellValue('V'.$i, $r->sick_desc);
-				// $active_sheet->setCellValue('W'.$i, ($r->passport==1?'Ya':($r->passport==2?'Tidak':'')));
-				// $active_sheet->setCellValue('X'.$i, $r->passport_name);
-				// $active_sheet->setCellValueExplicit('Y'.$i, $r->passport_no);
-				// $active_sheet->setCellValue('Z'.$i, PHPExcel_Shared_Date::PHPToExcel(date_to_excel($r->passport_exp)));
-				// $active_sheet->getStyle('Z'.$i)->getNumberFormat()->setFormatCode('dd/mm/yyyy');		   
-				// $active_sheet->setCellValue('AA'.$i, ($r->barcelona==1?'Ya':($r->barcelona==2?'Tidak':'')));
-				// $active_sheet->setCellValue('AB'.$i, $r->travel);
-				// $active_sheet->setCellValue('AC'.$i, ($r->campaign==1?'Ya':($r->campaign==2?'Tidak':'')));
-				// $active_sheet->setCellValue('AD'.$i, $r->campaign_desc);
-				// $active_sheet->setCellValue('AE'.$i, ($r->campaign_same==1?'Ya':($r->campaign_same==2?'Tidak':'')));
-				// $active_sheet->setCellValue('AF'.$i, ($r->campaign_same_price==1?'Ya':($r->campaign_same_price==2?'Tidak':'')));
-				// $active_sheet->setCellValue('AG'.$i, $r->campaign_same_name);
-				// $active_sheet->setCellValue('AH'.$i, ($r->hamil==1?'Ya':($r->hamil==2?'Tidak':'')));
-				// $active_sheet->setCellValue('AI'.$i, ($r->i1==1?'5':'0'));
-				// $active_sheet->setCellValue('AJ'.$i, ($r->i1==2?'5':'0'));
-				// $active_sheet->setCellValue('AK'.$i, ($r->i1==3?'5':'0'));
-				// $active_sheet->setCellValue('AL'.$i, ($r->i2==1?'5':'0'));
-				// $active_sheet->setCellValue('AM'.$i, ($r->i2==2?'5':'0'));
-				// $active_sheet->setCellValue('AN'.$i, ($r->i2==3?'5':'0'));
-				// $m1 = ($r->m1==1?'3':($r->m1==2?'5':($r->m1==3?'8':'0')));
-				// $m2 = ($r->m2==1?'3':($r->m2==2?'5':($r->m2==3?'8':'0')));
-				// $m3 = ($r->m3==1?'3':($r->m3==2?'5':($r->m3==3?'8':'0')));
-				// $m4 = ($r->m4==1?'3':($r->m4==2?'5':($r->m4==3?'8':'0')));
-				// $m5 = ($r->m5==1?'3':($r->m5==2?'5':($r->m5==3?'8':'0')));
-				// $active_sheet->setCellValue('AO'.$i, $m1);
-				// $active_sheet->setCellValue('AP'.$i, $m2);
-				// $active_sheet->setCellValue('AQ'.$i, $m3);
-				// $active_sheet->setCellValue('AR'.$i, $m4);
-				// $active_sheet->setCellValue('AS'.$i, $m5);
-				// $n1 = ($r->n1==1?'3':($r->n1==2?'5':($r->n1==3?'8':'0')));
-				// $n2 = ($r->n2==1?'3':($r->n2==2?'5':($r->n2==3?'8':'0')));
-				// $n3 = ($r->n3==1?'3':($r->n3==2?'5':($r->n3==3?'8':'0')));
-				// $n4 = ($r->n4==1?'3':($r->n4==2?'5':($r->n4==3?'8':'0')));
-				// $n5 = ($r->n5==1?'3':($r->n5==2?'5':($r->n5==3?'8':'0')));
-				// $active_sheet->setCellValue('AT'.$i, $n1);
-				// $active_sheet->setCellValue('AU'.$i, $n2);
-				// $active_sheet->setCellValue('AV'.$i, $n3);
-				// $active_sheet->setCellValue('AW'.$i, $n4);
-				// $active_sheet->setCellValue('AX'.$i, $n5);
-				// $t1 = ($r->t1==1?'3':($r->t1==2?'5':($r->t1==3?'8':'0')));
-				// $t2 = ($r->t2==1?'3':($r->t2==2?'5':($r->t2==3?'8':'0')));
-				// $t3 = ($r->t3==1?'3':($r->t3==2?'5':($r->t3==3?'8':'0')));
-				// $t4 = ($r->t4==1?'3':($r->t4==2?'5':($r->t4==3?'8':'0')));
-				// $t5 = ($r->t5==1?'3':($r->t5==2?'5':($r->t5==3?'8':'0')));
-				// $active_sheet->setCellValue('AY'.$i, $t1);
-				// $active_sheet->setCellValue('AZ'.$i, $t2);
-				// $active_sheet->setCellValue('BA'.$i, $t3);
-				// $active_sheet->setCellValue('BB'.$i, $t4);
-				// $active_sheet->setCellValue('BC'.$i, $t5);
-				// $active_sheet->setCellValue('BD'.$i, ($m1+$m2+$m3+$m4+$m5));
-				// $active_sheet->setCellValue('BE'.$i, ($n1+$n2+$n3+$n4+$n5));
-				// $active_sheet->setCellValue('BF'.$i, ($t1+$t2+$t3+$t4+$t5));
-				// $active_sheet->setCellValue('BG'.$i, $r->remark);
-				// $active_sheet->setCellValue('BH'.$i, $r->overall);
-				// $active_sheet->setCellValue('BI'.$i, PHPExcel_Shared_Date::PHPToExcel(date_to_excel($r->dist_date)));
-				// $active_sheet->getStyle('BI'.$i)->getNumberFormat()->setFormatCode('dd/mm/yyyy');		   
-				// $active_sheet->setCellValue('BJ'.$i, $r->status_name);
-				// $active_sheet->setCellValue('BK'.$i, $this->callhis_model->get_note($r->id));
+				$active_sheet->setCellValue('K'.$i, $r->brand);
+				$active_sheet->setCellValue('L'.$i, $r->art_title);
+				$active_sheet->setCellValue('M'.$i, $r->art_type);
+				$active_sheet->setCellValue('N'.$i, ($r->called==1?'Berhasil Dihubungi':''));
+				$active_sheet->setCellValue('O'.$i, $this->yatidak($r->minute));
+				$active_sheet->setCellValue('P'.$i, $this->yatidak($r->smoker));
+				$active_sheet->setCellValue('Q'.$i, $this->yatidak($r->callagain));
+				$active_sheet->setCellValue('R'.$i, $this->yatidak($r->plagiat));
+				$active_sheet->setCellValue('S'.$i, $r->plagiat_desc);
+				$active_sheet->setCellValue('T'.$i, $r->art_desc);
+				$active_sheet->setCellValue('U'.$i, $this->yatidak($r->signature));
+				$active_sheet->setCellValue('V'.$i, $r->city_f2f_name);
+				$active_sheet->setCellValue('W'.$i, $this->yatidak($r->facetoface));
+				$active_sheet->setCellValue('X'.$i, $this->overseas($r->overseas));
+				$active_sheet->setCellValue('Y'.$i, $r->overseas_desc);
+				$active_sheet->setCellValue('Z'.$i, $this->yatidak($r->visa));
+				$active_sheet->setCellValue('AA'.$i, $r->visa_desc);
+				$active_sheet->setCellValue('AB'.$i, $this->yatidak($r->grandprize));
+				$active_sheet->setCellValue('AC'.$i, $r->trivia);
+				$active_sheet->setCellValue('AD'.$i, $r->english1);
+				$active_sheet->setCellValue('AE'.$i, $r->english2);
+				$active_sheet->setCellValue('AF'.$i, $this->english3($r->english3));
+				$active_sheet->setCellValue('AG'.$i, $r->english3_desc);
+				$active_sheet->setCellValue('AH'.$i, $r->english4);
+				$active_sheet->setCellValue('AI'.$i, $this->yatidak($r->passport));
+				$active_sheet->setCellValue('AJ'.$i, $r->passport_name);
+				$active_sheet->setCellValue('AK'.$i, PHPExcel_Shared_Date::PHPToExcel(date_to_excel($r->passport_exp)));
+				$active_sheet->getStyle('AK'.$i)->getNumberFormat()->setFormatCode('dd/mm/yyyy');		   
+				$active_sheet->setCellValue('AL'.$i, $r->country);
+				$active_sheet->setCellValue('AM'.$i, $this->yatidak($r->campaign));
+				$active_sheet->setCellValue('AN'.$i, $r->campaign_desc);
+				$active_sheet->setCellValue('AO'.$i, PHPExcel_Shared_Date::PHPToExcel(date_to_excel($r->dist_date)));
+				$active_sheet->getStyle('AO'.$i)->getNumberFormat()->setFormatCode('dd/mm/yyyy');		   
+				$active_sheet->setCellValue('AP'.$i, $r->status_name);
+				$active_sheet->setCellValue('AQ'.$i, $this->callhis_model->get_note($r->id));
 				$i++;
 			}
 
@@ -203,6 +146,69 @@ class Export extends MY_Controller {
 								 
 			$objWriter = PHPExcel_IOFactory::createWriter($excel, 'Excel2007');  
 			$objWriter->save('php://output');										
+		}
+	}
+	private function overseas($id)
+	{
+		switch ($id) {
+			case 1:
+				return "Belum pernah sama sekali";
+				break;
+			case 2:
+				return "3 tahun yang lalu";
+				break;
+			case 3:
+				return "2 tahun yang lalu";
+				break;
+			case 4:
+				return "1 tahun yang lalu";
+				break;
+			case 5:
+				return "Kurang lebih 6 bulan yang lalu";
+				break;
+			case 6:
+				return "Dalam 3 bulan terakhir ini";
+				break;
+			case 7:
+				return "Dalam 1 bulan terakhir ini";
+				break;			
+			default:
+				return "";
+				break;
+		}
+	}
+	private function yatidak($id)
+	{
+		switch ($id) {
+			case 1:
+				return "Ya";
+				break;
+			case 2:
+				return "Tidak";
+				break;
+			default:
+				return "";
+				break;
+		}
+	}
+	private function english3($id)
+	{
+		switch ($id) {
+			case 1:
+				return "Billboard";
+				break;
+			case 2:
+				return "Magazine";
+				break;
+			case 3:
+				return "Newspaper";
+				break;
+			case 4:
+				return "Cinema Ad";
+				break;
+			default:
+				return "";
+				break;
 		}
 	}
 }

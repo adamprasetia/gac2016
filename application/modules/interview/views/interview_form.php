@@ -1,9 +1,13 @@
 <?php 
 	$gretting = 'Selamat '.(date('G')<10?'pagi':(date('G')<15?'siang':'sore')) ;
-	$f2f = '15 - 16 Agustus 2016';
-	$grandprize = 'Melbourne, Australia';
-	$grandprize_date = 'Tanggal 22 - 27 September 2015';
-	$sesi_tanya_jawab = 'Jakarta*, pada tanggal DD – DD Month 2016';
+
+	$ref = file_get_contents('./files/ref.json');
+	$ref = json_decode($ref, true);
+
+	$f2f = $ref['f2f'];
+	$grandprize = $ref['grandprize'];
+	$grandprize_date = $ref['grandprize_date'];
+	$sesi_tanya_jawab = $ref['sesi_tanya_jawab'];
 ?>
 <section class="content-header">
 	<h1>
@@ -109,26 +113,26 @@
 	    			<h3><?php echo $gretting ?></h3>
 	    		</div>	
 			</div>								
-			<div class="box box-resign hide">
+			<div class="box box-callagain hide">
 				<div class="box-body">
 					<h3>Dengan demikian, diharapkan Mas/Mbak dapat menjawab beberapa pertanyaan dari kami.</h3>
 					<h3>Jika Mas/Mbak berhasil menjawab seluruh pertanyaan dengan baik, Maka Mas/Mbak akan kami hubungi kembali untuk mengabarkan apabila Mas/Mbak lolos ke tahapan seleksi berikutnya, tanggal <?php echo $f2f ?> dan menangkan kesempatan untuk menampilkan karya anda di salah satu festival seni di <?php echo $grandprize ?>. </h3>
 					<h3>Apakah Mas/Mbak keberatan atau berhalangan ?</h3>
 					<div class="radio">
 						<label>
-							<?php echo form_radio(array('id'=>'resign1','name'=>'resign','value'=>'1','checked'=>($candidate->resign==1?true:false))) ?>
+							<?php echo form_radio(array('id'=>'callagain1','name'=>'callagain','value'=>'1','checked'=>($candidate->callagain==1?true:false))) ?>
 							Tidak Keberatan
 						</label>
 					</div>				
 					<div class="radio">
 						<label>
-							<?php echo form_radio(array('id'=>'resign2','name'=>'resign','value'=>'2','checked'=>($candidate->resign==2?true:false))) ?>
+							<?php echo form_radio(array('id'=>'callagain2','name'=>'callagain','value'=>'2','checked'=>($candidate->callagain==2?true:false))) ?>
 							Keberatan atau berhalangan
 						</label>
 					</div>				
 				</div>				
 			</div>
-			<div class="box box-resign-tidak box-danger hide">
+			<div class="box box-callagain-tidak box-danger hide">
 				<div class="box-body">
 	    			<h3>Mohon maaf sekali, dengan demikian Anda dianggap gugur dalam program ini, karena face to face interview adalah salah satu syarat untuk dapat memenangkan grand prize Go Ahead Challenge. Terima kasih atas waktunya</h3>
 	    			<h3><?php echo $gretting ?></h3>
@@ -380,7 +384,7 @@
 				</div>	
 				<div class="box box-grandprize">
 					<div class="box-body">
-						<h3>Apabila Anda berhasil memenangkan grand prize berupa kesempatan untuk berangkat & menampilkan karya anda di salah satu festival seni di <?php echo $grandprize.' '.$grandprize_date ?> </h3>
+						<h3>4. Apabila Anda berhasil memenangkan grand prize berupa kesempatan untuk berangkat & menampilkan karya anda di salah satu festival seni di <?php echo $grandprize.' '.$grandprize_date ?> </h3>
 						<h3>Apakah Mas/Mbak bersedia ?</h3>
 						<div class="radio">
 							<label>
@@ -416,7 +420,7 @@
 				</div>
 				<div class="box box-trivia">
 					<div class="box-body">
-						<h3>1. Apabila Anda terpilih menjadi pemenang grand prize Go Ahead Challenge ke Melbourne - Australia, Apakah Anda akan semangat dan excited dalam mengikuti semua kegiatannya ? Go Ahead Moment apa yang akan Anda lakukan ?</h3>
+						<h3>1. Apabila Anda terpilih menjadi pemenang grand prize Go Ahead Challenge ke <?php echo $grandprize ?>, Apakah Anda akan semangat dan excited dalam mengikuti semua kegiatannya ? Go Ahead Moment apa yang akan Anda lakukan ?</h3>
 						<textarea name="trivia" rows="5" autocomplete="off" class="form-control input-sm"><?php echo (isset($candidate->trivia)?$candidate->trivia:'') ?></textarea>
 					</div>				
 				</div>							
