@@ -11,19 +11,22 @@
 	<?php echo form_open($action,array('class'=>'form-inline'))?>
 	<div class="box box-default">
 		<div class="box-body">
-				<div class="form-group">
-					<?php echo form_label('Show entries','limit')?>
-					<?php echo form_dropdown('limit',array('10'=>'10','50'=>'50','100'=>'100'),set_value('limit',$this->input->get('limit')),'onchange="submit()" class="form-control input-sm"')?> 
-				</div>
-				<div class="form-group">
-					<?php echo form_input(array('name'=>'search','value'=>$this->input->get('search'),'autocomplete'=>'off','placeholder'=>'Search..','onchange=>"submit()"','class'=>'form-control input-sm'))?>
-				</div>
-				<div class="form-group">
-					<?php echo form_dropdown('status',$this->interview_model->status_dropdown(),$this->input->get('status'),'class="form-control input-sm" onchange="submit()"')?>
-				</div>
-				<div class="form-group">
-					<?php echo form_dropdown('interviewer',$this->interview_model->interviewer_dropdown(),$this->input->get('interviewer'),'class="form-control input-sm" onchange="submit()"')?>
-				</div>
+			<div class="form-group">
+				<?php echo form_label('Show entries','limit')?>
+				<?php echo form_dropdown('limit',array('10'=>'10','50'=>'50','100'=>'100'),set_value('limit',$this->input->get('limit')),'onchange="submit()" class="form-control input-sm"')?> 
+			</div>
+			<div class="form-group">
+				<?php echo form_input(array('name'=>'search','value'=>$this->input->get('search'),'autocomplete'=>'off','placeholder'=>'Search..','onchange=>"submit()"','class'=>'form-control input-sm'))?>
+			</div>
+			<div class="form-group">
+				<?php echo form_dropdown('status',$this->interview_model->status_dropdown(),$this->input->get('status'),'class="form-control input-sm" onchange="submit()"')?>
+			</div>
+			<div class="form-group">
+				<?php echo form_dropdown('interviewer',$this->interview_model->interviewer_dropdown(),$this->input->get('interviewer'),'class="form-control input-sm" onchange="submit()"')?>
+			</div>
+			<div class="form-group">
+				<?php echo form_dropdown('art_type',array(''=>'- Art Type -','P'=>'Photography','V'=>'Visual Art','S'=>'Style','M'=>'Music'),$this->input->get('art_type'),'class="form-control input-sm" onchange="submit()"')?>
+			</div>
 		</div>		
 	</div>		
 	<div class="box box-default">

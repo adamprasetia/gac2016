@@ -67,6 +67,7 @@ class Interview_model extends CI_Model {
 		$proses = $this->input->get('proses');
 
 		$interviewer = $this->input->get('interviewer');
+		$art_type = $this->input->get('art_type');
 		if($status <> ''){
 			$data[] = $this->db->where('A.status',$status);
 		}
@@ -79,6 +80,9 @@ class Interview_model extends CI_Model {
 		}
 		if($interviewer <> ''){
 			$data[] = $this->db->where('A.interviewer',$interviewer);
+		}		
+		if($art_type <> ''){
+			$data[] = $this->db->where('A.art_type',$art_type);
 		}		
 		if($date_from <> '' && $date_to <> ''){
 			$data[] = $this->db->where('A.dist_date >=',format_ymd($date_from));

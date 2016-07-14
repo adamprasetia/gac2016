@@ -22,6 +22,7 @@ class Interview extends MY_Controller {
 			'email'			=> 'Email',
 			'status_name'	=> 'Status',
 			'interviewer'	=> 'Interviewer',
+			'art_type'		=> 'Art Type',
 			'note'			=> 'Note'
 		);
 		$heading[] = '#';
@@ -42,6 +43,7 @@ class Interview extends MY_Controller {
 				$r->email,			
 				$r->status_name,
 				$r->interviewer,			
+				$r->art_type,			
 				$this->callhis_model->get_note($r->id),
 				anchor('interview/phone/'.$r->id.get_query_string(),'Phone'.($count_call > 0?' <span class="label label-success">'.$count_call.' <span class="glyphicon glyphicon-earphone"></span></span>':''))
 			);
@@ -66,6 +68,7 @@ class Interview extends MY_Controller {
 			'limit'=>$this->input->post('limit'),
 			'status'=>$this->input->post('status'),
 			'interviewer'=>$this->input->post('interviewer'),
+			'art_type'=>$this->input->post('art_type'),
 			'date_from'=>$this->input->post('date_from'),
 			'date_to'=>$this->input->post('date_to'),
 			'valid'=>$this->input->post('valid'),
