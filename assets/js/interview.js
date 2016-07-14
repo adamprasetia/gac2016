@@ -29,10 +29,10 @@ $(document).ready(function(){
 	function check_smoker(){
 		var radio = $('input[type=radio][name=smoker]:checked').val();
 		if(radio==1){
-			$('.box-resign').removeClass('hide');
+			$('.box-callagain').removeClass('hide');
 			$('.box-smoker-tidak').addClass('hide');
 		}else if(radio==2){
-			$('.box-resign').addClass('hide');
+			$('.box-callagain').addClass('hide');
 			$('.box-smoker-tidak').removeClass('hide');
 		}			
 	}
@@ -41,21 +41,21 @@ $(document).ready(function(){
 		check_smoker();
 	});
 
-	function check_resign(){
-		var radio = $('input[type=radio][name=resign]:checked').val();
+	function check_callagain(){
+		var radio = $('input[type=radio][name=callagain]:checked').val();
 		if(radio==1){
 			$('.box-verification').removeClass('hide');
 			$('.box-tanya-jawab-1').removeClass('hide');
-			$('.box-resign-tidak').addClass('hide');
+			$('.box-callagain-tidak').addClass('hide');
 		}else if(radio==2){
 			$('.box-verification').addClass('hide');
 			$('.box-tanya-jawab-1').addClass('hide');
-			$('.box-resign-tidak').removeClass('hide');
+			$('.box-callagain-tidak').removeClass('hide');
 		}			
 	}
-	check_resign();
-	$('input[type=radio][name=resign]').change(function(){
-		check_resign();
+	check_callagain();
+	$('input[type=radio][name=callagain]').change(function(){
+		check_callagain();
 	});
 
 	function check_plagiat(){
