@@ -274,7 +274,7 @@
 				</div>
 				<div class="box box-facetoface">
 					<div class="box-body">
-						<h3>1. Apabila Anda terpilih untuk melanjutkan ke tahap ke tahapan seleksi berikutnya, yaitu face-to-face interview di beberapa kota yang kami tentukan. Seperti : </h3>
+						<h3>1. Apabila Anda terpilih untuk melanjutkan ke tahap seleksi berikutnya, yaitu face-to-face interview di : </h3>
 						<?php
 							$city_list = $this->interview_model->get_city_list();
 							if ($city_list) {
@@ -422,6 +422,12 @@
 					<div class="box-body">
 						<h3>1. Apabila Anda terpilih menjadi pemenang grand prize Go Ahead Challenge ke <?php echo $grandprize ?>, Apakah Anda akan semangat dan excited dalam mengikuti semua kegiatannya ? Go Ahead Moment apa yang akan Anda lakukan ?</h3>
 						<textarea name="trivia" rows="5" autocomplete="off" class="form-control input-sm"><?php echo (isset($candidate->trivia)?$candidate->trivia:'') ?></textarea>
+					</div>				
+				</div>							
+				<div class="box box-experience">
+					<div class="box-body">
+						<h3>2. Apabila anda terpilih menjadi pemenang, experience seperti apa yang anda ingin dapatkan ?</h3>
+						<textarea name="experience" rows="5" autocomplete="off" class="form-control input-sm"><?php echo (isset($candidate->experience)?$candidate->experience:'') ?></textarea>
 					</div>				
 				</div>							
 				<div class="box box-closing-c">

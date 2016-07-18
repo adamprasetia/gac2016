@@ -115,6 +115,7 @@ class Interview extends MY_Controller {
 				'visa_desc'=>$this->input->post('visa_desc'),
 				'grandprize'=>$this->input->post('grandprize'),
 				'trivia'=>$this->input->post('trivia'),
+				'experience'=>$this->input->post('experience'),
 				'english1'=>$this->input->post('english1'),
 				'english2'=>$this->input->post('english2'),
 				'english3'=>$this->input->post('english3'),
