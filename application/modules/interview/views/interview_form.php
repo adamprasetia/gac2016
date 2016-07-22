@@ -398,7 +398,17 @@
 								Tidak
 							</label>
 						</div>				
-					</div>				
+					</div>
+					<div class="box-footer" style="background:#222d32;color:#b8c7ce">
+						<p><strong>Reward :</strong></p>
+						<p>*mengikuti rangkain kegiatan di Jakarta seperti camp bertemu dengan para expert dan berkesempatan untuk berkunjung ke studio seni di Berlin/Amsterdam untuk bertemu dan belajar dari expertise yg ada di Berlin/Amsterdam</p>
+
+						<p>*Program creators camp berlangsung di Jakarta dan Berliin/Amsterdam</p>
+
+						<p>Dari tanggal 29 Januari – 15 Februari (17 Hari)</p>
+						<p>4 Hari Di Jakarta dan sisanya di Berlin/Amsterdam</p>
+
+					</div>
 				</div>							
 				<div class="box box-grandprize-tidak box-danger hide">
 					<div class="box-body">
