@@ -116,7 +116,8 @@
 			<div class="box box-callagain hide">
 				<div class="box-body">
 					<h3>Dengan demikian, diharapkan Mas/Mbak dapat menjawab beberapa pertanyaan dari kami.</h3>
-					<h3>Jika Mas/Mbak berhasil menjawab seluruh pertanyaan dengan baik, Maka Mas/Mbak akan kami hubungi kembali untuk mengabarkan apabila Mas/Mbak lolos ke tahapan seleksi berikutnya, tanggal <?php echo $f2f ?> dan menangkan kesempatan untuk menampilkan karya anda di salah satu festival seni di <?php echo $grandprize ?>. </h3>
+					<h3>Jika Mas/Mbak berhasil menjawab seluruh pertanyaan dengan baik,</h3>
+					<h3>Maka Mas/Mbak akan kami hubungi kembali untuk mengabarkan apabila Mas/Mbak lolos ke tahapan seleksi berikutnya di Jakarta, tanggal <?php echo $f2f ?> dan menangkan kesempatan untuk mendapatkan pengalaman internasional ke <?php echo $grandprize ?>. </h3>
 					<h3>Apakah Mas/Mbak keberatan atau berhalangan ?</h3>
 					<div class="radio">
 						<label>
@@ -401,12 +402,12 @@
 					</div>
 					<div class="box-footer" style="background:#222d32;color:#b8c7ce">
 						<p><strong>Reward :</strong></p>
-						<p>*mengikuti rangkain kegiatan di Jakarta seperti camp bertemu dengan para expert dan berkesempatan untuk berkunjung ke studio seni di Berlin/Amsterdam untuk bertemu dan belajar dari expertise yg ada di Berlin/Amsterdam</p>
+						<p>*mengikuti rangkain kegiatan di Jakarta seperti camp bertemu dengan para expert dan berkesempatan untuk berkunjung ke studio seni di Berlin/Amsterdam untuk bertemu dan belajar dari expertise yg ada di Amsterdam</p>
 
-						<p>*Program creators camp berlangsung di Jakarta dan Berliin/Amsterdam</p>
+						<p>*Program creators camp berlangsung di Jakarta dan Amsterdam</p>
 
 						<p>Dari tanggal 29 Januari – 15 Februari (17 Hari)</p>
-						<p>4 Hari Di Jakarta dan sisanya di Berlin/Amsterdam</p>
+						<p>4 Hari Di Jakarta dan sisanya di Amsterdam</p>
 
 					</div>
 				</div>							
@@ -588,6 +589,11 @@
 				</div>		
 				<div class="box box-closing">
 					<div class="box-body">
+						<h4>Harap untuk menyiapkan juga :</h4>
+						<ol>
+							<li>portfolio</li>
+							<li>Essay tentang apa motivasi lo ikut GAC dalam Bahasa inggris. Kirim ke info@goaheadpeople.com</li>
+						</ol>
 						<h4>Sesi Wawancara via telepon saat ini sudah selesai. Terima kasih banyak atas waktu Mas/Mbak dalam partisipasi aktifnya. Pada tahap ini, sayangnya kandidat belum diperbolehkan untuk mendapatkan sesi tanya – jawab.</h4>
 						<h4>Sesi tanya jawab akan diberikan pada saat Anda lolos untuk mengikuti tahap selanjutnya di <?php echo $sesi_tanya_jawab ?>.</h4>
 						<h4>Mohon tunggu sekitar dua minggu untuk pengumuman semi finalis. Pengumuman semi finalis akan kami beritahukan lewat telepon dan email, sehingga pastikan ponsel Anda aktif pada periode tersebut dan di hari serta jam kerja.</h4>
